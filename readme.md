@@ -1,9 +1,7 @@
 # Aplicação de exemplo do WorkShop sobre Teste End 2 End (GRPC + Node)
 
-[![Linux Status](https://travis-ci.org/gustavobeavis/grpc-test-workshop.svg?branch=master)](https://travis-ci.org/gustavobeavis/grpc-test-workshop)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/1332e60de9e3b0f75d6d/maintainability)](https://codeclimate.com/github/gustavobeavis/grpc-test-workshop/maintainability)
-
+[![Linux Status](https://travis-ci.org/gustavobeavis/grpc-test-workshop.svg?branch=master)](https://travis-ci.org/gustavobeavis/grpc-test-workshop) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/1332e60de9e3b0f75d6d/maintainability)](https://codeclimate.com/github/gustavobeavis/grpc-test-workshop/maintainability) 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1332e60de9e3b0f75d6d/test_coverage)](https://codeclimate.com/github/gustavobeavis/grpc-test-workshop/test_coverage)
 
 ## Objetivo
