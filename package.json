@@ -17,7 +17,7 @@
     "build": "./node_modules/.bin/babel ./src --out-dir dist/",
     "debug": "babel-node ./src/index.js --nolazy --inspect=0.0.0.0:9229",
     "test": "cross-env NODE_ENV=test nyc --report lcovonly mocha test --exit",
-    "postest": "npm run clean:build",
+    "posttest": "nyc report --reporter=lcov && npm run clean:build",
     "clean": "rm -f package-lock.json && rm -rf node_modules &&  rm -rf ./dist/ ",
     "clean:build": "rm -rf ./dist/",
     "lint": "eslint src/ test/",
