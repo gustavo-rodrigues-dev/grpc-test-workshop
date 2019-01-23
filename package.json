@@ -1,0 +1,55 @@
+{
+  "name": "grpc-test-workshop",
+  "version": "1.0.0",
+  "description": "Implementaçã baisca de gRPC com teste E2E",
+  "keywords": [
+    "grpc"
+  ],
+  "author": "Gustavo S. Rodrigues <gustavo.beavis@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=local babel-node ./src/index.js",
+    "prebuild": "rm -rf ./dist",
+    "build": "./node_modules/.bin/babel ./src --out-dir dist/",
+    "debug": "babel-node ./src/index.js --nolazy --inspect=0.0.0.0:9229",
+    "test": "cross-env NODE_ENV=test nyc --report lcovonly mocha test --exit",
+    "postest": "npm run clean:build",
+    "clean": "rm -f package-lock.json && rm -rf node_modules &&  rm -rf ./dist/ ",
+    "clean:build": "rm -rf ./dist/",
+    "lint": "eslint src/ test/",
+    "lint:fix": "eslint src/ test/ --fix"
+  },
+  "nyc": {
+    "exclude": [
+      "test",
+      "dist"
+    ]
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "grpc": "^1.17.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.0.1",
+    "babel-plugin-istanbul": "5.1.0",
+    "babel-register": "6.26.0",
+    "cross-env": "5.2.0",
+    "eslint": "5.12.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "nyc": "13.0.1"
+  }
+}
