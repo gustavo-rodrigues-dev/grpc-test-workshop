@@ -1,6 +1,5 @@
 /* global  describe,it,assert */
-// eslint-disable-next-line no-debugger
-debugger
+
 describe('Hello Stream service', () => {
   it('Shoud return twice greater', done => {
     const call = global.grpcCLient.sayHello({
