@@ -6,7 +6,10 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1332e60de9e3b0f75d6d/test_coverage)](https://codeclimate.com/github/gustavobeavis/grpc-test-workshop/test_coverage)
 
 ## Objetivo
-Nesse projeto há uma breve implementação de um sitema de mensagens de bem vindo usando streams de resposta, assim como implementar um teste E2E de uma aplicação gRPC em Node
+Nesse projeto há uma breve implementação de um sitema de mensagens de bem vindo usando streams de resposta, assim como implementar um teste E2E de uma aplicação gRPC em Node.
+
+### Slides da apresentação
+https://drive.google.com/open?id=1gH_I_nMBQCrj7_9PipZoVBPf0sVJ643B
 
 ## Estrutura do Projeto
 - src
